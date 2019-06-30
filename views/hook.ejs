@@ -4,11 +4,18 @@
     <meta charset="utf-8">
     <title>Hook websocket app</title>
     <link rel="stylesheet" href="/assets/styles.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <script src="/js/socket.js"></script>
     </head>
     <body>
         <div>
-            <canvas id="myCanvas" width="300" height="200"></canvas>
+            <h2>Hook chat</h2>
+            <div id="chat-window">
+                <div id="output"></div>
+                <div id="feedback"></div>
+            </div>
+            <input id="handle" type="text" placeholder="Name" />
+            <input id="message" type="text" placeholder="Message" />
+            <button id="send">Send</button>
         </div>
         <script type="text/javascript" src="/js/chat.js">          
         </script>

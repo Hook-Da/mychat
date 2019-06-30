@@ -17,6 +17,7 @@ var server = http.createServer(app).listen(config.get('port'),()=>{
 });
 
 var io = socket(server);
+
 hookController(app);
 
 io.on('connection', (socket)=>{
